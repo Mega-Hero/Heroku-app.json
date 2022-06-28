@@ -26,13 +26,13 @@ async def start_command(_, m: Message):
     await m.reply_text(
         "Hi, I am Heroku app.json maker bot.\n\n"
         "To start making app.json for your heroku app,\n"
-        "Press /f",
+        "Press /harshith By Created : @MutyalaHarshith",
         quote=True,
         disable_web_page_preview=True,
     )
 
 
-@app.on_message(filters.command("f") & ~filters.edited & filters.private)
+@app.on_message(filters.command("harshith") & ~filters.edited & filters.private)
 async def f_command(bot: Client, m: Message):
     editable = await m.reply_text(
         "Please wait ...",
